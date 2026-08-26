@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Nest Egg | Save today, hatch tomorrow</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/navbar.css" />
+    </head>
+
+    <body>
+        <header class="site-header">
+            <nav class="navbar">
+                <a href="index.html" class="company-name"><p>NestEgg</p> </a>
+
+                <div class="header-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="features.html">Features</a>
+                    <a href="pricing.html">Pricing</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- TODO:  -->
+        <main>
+            <section class="hero">
+                <div class="hero-text">
+                    <h1 class="hero-head">
+                        nest egg will save and invest your moeny!
+                    </h1>
+                    <p class="hero-blurb">
+                        store your moeny and get rich hassle free. nest egg is
+                        free to join and will invest all your moeny and
+                        guarantee 80% yearly returns* iwth minimal managementt
+                        fees*
+                    </p>
+                    <a href="pricing.html" class="hero-cta">Get Started</a>
+                </div>
+                <picture class="hero-image">
+                    <!-- Desktop & Wider: Screens 1200px and up -->
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="hero-desktop.jpg"
+                    />
+
+                    <!-- Tablet: Screens between 768px and 1199px -->
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="hero-tablet.jpg"
+                    />
+
+                    <!-- Mobile: Default fallback for everything under 768px (like your 375px target) -->
+                    <img
+                        src="hero-mobile.jpg"
+                        alt="A clean, modern workspace showing code layouts"
+                        loading="eager"
+                    />
+                </picture>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Nest Egg</p>
+        </footer>
+    </body>
+</html>

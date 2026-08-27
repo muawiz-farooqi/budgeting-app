@@ -2,8 +2,10 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <!-- page title -->
         <title>Nest Egg | Save today, hatch tomorrow</title>
 
+        <!-- font awesome icons -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
@@ -12,12 +14,13 @@
 
         <link rel="stylesheet" href="./css/styles.css" />
         <link rel="stylesheet" href="./css/navbar.css" />
+        <link rel="stylesheet" href="./css/index.css" />
     </head>
 
     <body>
         <header class="site-header">
             <nav class="navbar">
-                <a href="index.html" class="company-name"><p>NestEgg</p> </a>
+                <a href="index.html" class="company-name"><p>Nest Egg</p> </a>
 
                 <div class="header-links">
                     <a href="index.html" class="active">Home</a>
@@ -30,44 +33,133 @@
 
         <!-- TODO:  -->
         <main>
-            <section class="hero">
-                <div class="hero-text">
-                    <h1 class="hero-head">
-                        nest egg will save and invest your moeny!
-                    </h1>
-                    <p class="hero-blurb">
-                        store your moeny and get rich hassle free. nest egg is
-                        free to join and will invest all your moeny and
-                        guarantee 80% yearly returns* iwth minimal managementt
-                        fees*
-                    </p>
-                    <a href="pricing.html" class="hero-cta">Get Started</a>
+            <section class="site-hero">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-heading">
+                            Stop budgeting. Start saving.
+                        </h1>
+                        <p class="hero-subtext">
+                            Most budgeting apps want you to log every coffee.
+                            NestEgg just watches your accounts and moves money
+                            for you, a little at a time, until you've got a real
+                            cushion.
+                        </p>
+                        <a href="pricing.html" class="hero-button"
+                            >Start Saving</a
+                        >
+                    </div>
+
+                    <picture class="hero-image">
+                        <!-- Desktop (1200px+) -->
+                        <source
+                            media="(min-width: 1200px)"
+                            srcset="assets/images/hero/gpt_hero_desktop.webp"
+                            type="image/webp"
+                        />
+                        <source
+                            media="(min-width: 1200px)"
+                            srcset="assets/images/hero/gpt_hero_desktop.png"
+                            type="image/png"
+                        />
+
+                        <!-- Tablet (768px to 1199px) -->
+                        <source
+                            media="(min-width: 768px)"
+                            srcset="assets/images/hero/gpt_hero_tablet.webp"
+                            type="image/webp"
+                        />
+                        <source
+                            media="(min-width: 768px)"
+                            srcset="assets/images/hero/gpt_hero_tablet.png"
+                            type="image/png"
+                        />
+
+                        <!-- Mobile (<768px) / Default Fallback -->
+                        <source
+                            srcset="assets/images/hero/gpt_hero_mobile.webp"
+                            type="image/webp"
+                        />
+                        <img
+                            src="assets/images/hero/gpt_hero_mobile.png"
+                            alt="Nest Egg UI Hero Image"
+                            loading="lazy"
+                        />
+                    </picture>
                 </div>
-                <picture class="hero-image">
-                    <!-- Desktop & Wider: Screens 1200px and up -->
-                    <source
-                        media="(min-width: 1200px)"
-                        srcset="hero-desktop.jpg"
-                    />
-
-                    <!-- Tablet: Screens between 768px and 1199px -->
-                    <source
-                        media="(min-width: 768px)"
-                        srcset="hero-tablet.jpg"
-                    />
-
-                    <!-- Mobile: Default fallback for everything under 768px (like your 375px target) -->
-                    <img
-                        src="hero-mobile.jpg"
-                        alt="A clean, modern workspace showing code layouts"
-                        loading="eager"
-                    />
-                </picture>
             </section>
+
+            <section class="features-wrapper">
+                <div class="features-section">
+                    <h2 class="features-heading">Four Steps, Zero Effort</h2>
+                    <div class="features-steps">
+                        <figure class="feature_item">
+                            <img
+                                src=""
+                                alt="link bank account"
+                                class="feature-icon"
+                            />
+                            <figcaption>
+                                Link your bank in under a minute, no paperwork
+                            </figcaption>
+                        </figure>
+
+                        <figure class="feature_item">
+                            <img
+                                src=""
+                                alt="piggy bank/coin"
+                                class="feature-icon"
+                            />
+                            <figcaption>
+                                Spare change from every purchase quietly adds up
+                            </figcaption>
+                        </figure>
+
+                        <figure class="feature_item">
+                            <img
+                                src=""
+                                alt="target/flag"
+                                class="feature-icon"
+                            />
+                            <figcaption>
+                                Tell us what you're saving for, watch the number
+                                climb
+                            </figcaption>
+                        </figure>
+
+                        <figure class="feature_item">
+                            <img
+                                src=""
+                                alt="chart/graph"
+                                class="feature-icon"
+                            />
+                            <figcaption>
+                                See exactly where last month's paycheck went
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonial-wrapper">
+                <div class="testimonial">
+                    <blockquote class="quote">
+                        <p>
+                            "I ignored the app for four months straight, figured
+                            it wasn't doing much. Then I opened it during rent
+                            week and there was nine hundred dollars sitting
+                            there. Didn't even feel it happen."
+                        </p>
+                    </blockquote>
+                    <p class="quote-author">— Steve Jobs</p>
+                </div>
+            </section>
+
+            <section class="site-cta"></section>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Nest Egg</p>
+        <footer class="footer">
+            <p>Copyright &copy; 2026 Nest Egg Inc.</p>
         </footer>
     </body>
 </html>

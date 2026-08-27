@@ -17,13 +17,18 @@
     font-weight: lighter;
 }
 
+@font-face {
+    font-family: "Roboto Light";
+    src: url(../assets/fonts/Roboto-Light.ttf) format("truetype");
+    font-weight: lighter;
+}
+
 /* site wide colors define here */
 html {
     --color-dark: #1f2937;
     --color-light-text: #f9faf8;
     --color-secondary-text: #e5e7eb;
     --color-blue-accent: #3882f6;
-    --color-quote-bg: #e5e7eb;
 }
 
 /* defaults */
@@ -31,4 +36,14 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-dark);
+    color: var(--color-secondary-text);
+    font-family: "Roboto Light", sans-serif;
+
+    padding: 2rem 0;
 }

@@ -33,3 +33,50 @@
     color: var(--color-secondary-text);
     text-decoration: none;
 }
+
+.menu-toggle,
+.menu-button {
+    display: none;
+}
+
+/*
+ * Mobile navbar prototype:
+ * While testing the About page at 375px, the desktop navigation
+ * caused horizontal overflow because all navigation links remained
+ * visible on small screens.
+ *
+ * A CSS-only burger menu was implemented and tested on the About page.
+ * This fixes the overflow and keeps the navigation accessible on mobile.
+ *
+ * The implementation should be reviewed with the team before being
+ * applied to the navbar markup on all pages.
+ */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-button {
+        display: block;
+        color: var(--color-light-text);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .header-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 16px;
+        width: 100%;
+        margin-top: 16px;
+
+        /* background-color: black; */
+        /* padding: 5%; */
+    }
+
+    .menu-toggle:checked ~ .header-links {
+        display: flex;
+    }
+}

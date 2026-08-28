@@ -23,14 +23,6 @@
     font-weight: lighter;
 }
 
-/* site wide colors define here */
-html {
-    --color-dark: #1f2937;
-    --color-light-text: #f9faf8;
-    --color-secondary-text: #e5e7eb;
-    --color-blue-accent: #3882f6;
-}
-
 /* defaults */
 * {
     margin: 0;
@@ -38,6 +30,27 @@ html {
     box-sizing: border-box;
 }
 
+/* client's desired colors defined here */
+html {
+    --color-dark: #1f2937;
+    --color-light-text: #f9faf8;
+    --color-secondary-text: #e5e7eb;
+    --color-blue-accent: #3882f6;
+}
+
+/* make footer stay on bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* main fills up empty space */
+main {
+    flex: 1;
+}
+
+/* footer styling */
 .footer {
     display: flex;
     justify-content: center;

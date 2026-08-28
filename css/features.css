@@ -1,0 +1,18 @@
+.features-intro,
+.features-list,
+.features-cta {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features-intro {
+    padding: 4rem 1.5rem 3rem;
+    text-align: center;
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 1.5rem;
+}

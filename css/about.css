@@ -1,0 +1,39 @@
+.about-wrapper {
+    background-color: var(--color-secondary-text);
+}
+
+.about-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 24px;
+}
+
+.about-section {
+    display: flex;
+    gap: 2rem;
+}
+
+.about-section + .about-section {
+    margin-top: 4rem;
+}
+
+.about-main > h1 {
+    font-family: "Roboto ExtraBold", sans-serif;
+    font-size: 38px;
+    color: var(--color-dark);
+    margin-bottom: 2rem;
+}
+
+.about-content h2 {
+    font-family: "Roboto ExtraBold", sans-serif;
+    font-size: 28px;
+    color: var(--color-dark);
+    margin-bottom: 12px;
+}
+
+.about-content p {
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 18px;
+    color: var(--color-dark);
+    line-height: 1.5;
+}

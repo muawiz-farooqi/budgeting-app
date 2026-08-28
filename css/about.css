@@ -81,7 +81,7 @@
     padding-bottom: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .about-main {
         padding: 2rem 16px;
     }

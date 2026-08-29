@@ -58,5 +58,5 @@ main {
     color: var(--color-secondary-text);
     font-family: "Roboto Light", sans-serif;
 
-    padding: 2rem 0 calc(2rem + env(safe-area-inset-bottom)) 0;
+    padding: 2rem 0;
 }

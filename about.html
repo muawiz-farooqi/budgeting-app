@@ -1,98 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nest Egg | Save today, hatch tomorrow</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nest Egg | Save today, hatch tomorrow</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+            crossorigin="anonymous"
+        />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
-        crossorigin="anonymous" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/navbar.css" />
+        <link rel="stylesheet" href="./css/about.css" />
+    </head>
 
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/about.css">
-</head>
+    <body>
+        <header class="site-header">
+            <nav class="navbar">
+                <a href="index.html" class="company-name">
+                    <p>Nest Egg</p>
+                </a>
+                <!-- Mobile burger menu -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
-<body>
-    <header class="site-header">
-        <nav class="navbar">
-            <a href="index.html" class="company-name">
-                <p>Nest Egg</p>
-            </a>
-            <!-- Mobile burger menu -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-button">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
 
-            <label for="menu-toggle" class="menu-button">
-                <i class="fa-solid fa-bars"></i>
-            </label>
+                <div class="header-links">
+                    <a href="index.html">Home</a>
+                    <a href="features.html">Features</a>
+                    <a href="about.html" class="active">About Us</a>
+                    <a href="pricing.html">Pricing</a>
+                </div>
+            </nav>
+        </header>
+        <main class="about-wrapper">
+            <div class="about-main">
+                <h1>About Nest Egg</h1>
+                <section class="about-section">
+                    <div class="about-content">
+                        <!-- Why we exist -->
+                        <h2>Why we exist</h2>
 
-            <div class="header-links">
-                <a href="index.html">Home</a>
-                <a href="about.html" class="active">About Us</a>
-                <a href="pricing.html">Pricing</a>
+                        <p>
+                            Struggling to get your spending in line? Want to
+                            save money but don't know where to start? We have
+                            the perfect solution! Nest Egg helps you better
+                            understand your finances and take a closer look at
+                            exactly where your money comes from and where it
+                            goes.
+                        </p>
+                    </div>
+
+                    <div class="about-image">
+                        <img
+                            src="./assets/images/about/gptabout.png"
+                            alt="Person reviewing their finances using a budgeting app"
+                        />
+                    </div>
+                </section>
+
+                <section class="about-section">
+                    <div class="about-image">
+                        <img
+                            src="./assets/images/about/gptvac.png"
+                            alt="Person enjoying a vacation after reaching a financial goal"
+                        />
+                    </div>
+                    <div class="about-content">
+                        <!-- Our Mission -->
+                        <h2>Our mission</h2>
+
+                        <p>
+                            Here at Nest Egg, we have one mission: to give you
+                            greater control over your finances. Whether you're
+                            planning a vacation or simply want to save more
+                            money by the end of the month, Nest Egg helps make it
+                            possible.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="about-section about-values">
+                    <!-- Our Values -->
+                    <div class="about-content">
+                        <h2>Our values</h2>
+
+                        <p>
+                            With transparency at its core, Nest Egg makes
+                            managing your finances simpler, helping you achieve
+                            greater financial independence and peace of mind.
+                        </p>
+                    </div>
+                </section>
             </div>
-        </nav>
-    </header>
-    <main class="about-wrapper">
-        <div class="about-main">
-            <h1>About NestEgg</h1>
-            <section class="about-section">
-                <div class="about-content">
-                    <!-- Why we exist -->
-                    <h2>Why we exist</h2>
+        </main>
 
-                    <p>Struggling to get your spending in line? Want to save money but don't know where to start?
-                        We have the perfect solution! NestEgg helps you
-                        better understand your finances and take a closer
-                        look at exactly where your money comes from and where it goes.
-                    </p>
-                </div>
-
-                <div class="about-image">
-                    <img 
-                    src="./assets/images/about/gptabout.png" alt="Person reviewing their finances using a budgeting app"
-                    >
-                </div>
-            </section>
-
-            <section class="about-section">
-
-                <div class="about-image">
-                    <img 
-                    src="./assets/images/about/gptvac.png" alt="Person enjoying a vacation after reaching a financial goal"
-                    >
-                </div>
-                <div class="about-content">
-                    <!-- Our Mission -->
-                    <h2>Our mission</h2>
-
-                    <p>Here at NestEgg, we have one mission: to give you greater control over your finances.
-                        Whether you're planning a vacation or simply want to save more money by the end of the
-                        month, NestEgg helps make it possible.
-                    </p>
-                </div>
-            </section>
-
-            <section class="about-section about-values">
-                <!-- Our Values -->
-                <div class="about-content">
-                    <h2>Our values</h2>
-
-                    <p>With transparency at its core, NestEgg makes managing your finances
-                        simpler, helping you achieve greater financial independence and peace of mind.
-                    </p>
-                </div>
-            </section>
-        </div>
-    </main>
-
-
-
-
-    <footer class="footer">
-        <p>&copy; 2026 Nest Egg</p>
-    </footer>
-</body>
-
+        <footer class="footer">
+            <p>&copy; 2026 Nest Egg</p>
+        </footer>
+    </body>
 </html>

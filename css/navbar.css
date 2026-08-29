@@ -1,6 +1,9 @@
 .site-header {
   font-family: "Roboto Medium", sans-serif;
   background-color: var(--color-dark);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .navbar {

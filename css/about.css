@@ -60,7 +60,7 @@
 }
 
 .about-image {
-    flex: .9;
+    flex: 0.9;
     min-height: 220px;
     border-radius: 12px;
     overflow: hidden;
@@ -85,7 +85,7 @@
     .about-main {
         padding: 2rem 16px;
     }
-    
+
     .about-section {
         flex-direction: column;
         align-items: stretch;

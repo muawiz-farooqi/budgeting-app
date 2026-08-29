@@ -1,136 +1,176 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nest Egg Pricing</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nest Egg Pricing</title>
+        <!-- font awesome icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+            crossorigin="anonymous"
+        />
 
-  <!-- font awesome icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
-    crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="./css/navbar.css" />
+        <link rel="stylesheet" href="./css/pricing.css" />
+    </head>
 
-    
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="stylesheet" href="./css/navbar.css" />
-  <link rel="stylesheet" href="./css/pricing.css" />
-</head>
+    <body>
+        <header class="site-header">
+            <nav class="navbar">
+                <a href="index.html" class="company-name">
+                    <p>Nest Egg</p>
+                </a>
 
-<body>
-  <header class="site-header">
-    <nav class="navbar">
-      <a href="index.html" class="company-name">
-        <p>NestEgg</p>
-      </a>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
-      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-button">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
 
-      <label for="menu-toggle" class="menu-button">
-        <i class="fa-solid fa-bars"></i>
-      </label>
+                <div class="header-links">
+                    <a href="index.html">Home</a>
+                    <a href="features.html">Features</a>
+                    <a href="about.html">About Us</a>
+                    <a href="pricing.html" class="active">Pricing</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="pricing">
+                <div class="pricing-intro">
+                    <div class="pricing-intro-text">
+                        <h1>Simple, honest pricing</h1>
+                        <p class="pricing-subtitle">
+                            Start free, upgrade whenever you're ready to go
+                            deeper.
+                        </p>
+                    </div>
+                    <img
+                        class="pricing-intro-image"
+                        src="./assets/images/misc/phone-with-picture-fish-piggy-bank.png"
+                        alt="Phone showing the Nest Egg app with a piggy bank savings illustration"
+                        width="2000"
+                        height="2000"
+                        loading="lazy"
+                    />
+                </div>
 
-      <div class="header-links">
-        <a href="index.html">Home</a>
-        <a href="features.html">Features</a>
-        <a href="about.html">About Us</a>
-        <a href="pricing.html" class="active">Pricing</a>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section class="pricing">
-      <div class="pricing-intro">
-        <div class="pricing-intro-text">
-          <h1>Simple, honest pricing</h1>
-          <p class="pricing-subtitle">
-            Start free, upgrade whenever you're ready to go deeper.
-          </p>
-        </div>
-        <img class="pricing-intro-image" src="./assets/images/misc/phone-with-picture-fish-piggy-bank.png"
-          alt="Phone showing the Nest Egg app with a piggy bank savings illustration" width="2000" height="2000"
-          loading="lazy" />
-      </div>
+                <div class="plan-grid">
+                    <article class="plan-card plan-free" id="plan-free">
+                        <h2 class="plan-name">Free</h2>
+                        <p class="plan-desc">
+                            Everything you need to start budgeting.
+                        </p>
+                        <p class="plan-desc">
+                            Start budgeting without spending anything.
+                        </p>
+                        <ul class="plan-features">
+                            <li>
+                                <span class="check-icon" aria-hidden="true"
+                                    >✓</span
+                                >1 basic + 1 advanced book
+                            </li>
+                            <li>
+                                <span class="check-icon" aria-hidden="true"
+                                    >✓</span
+                                >Up to 2 accounts
+                            </li>
+                            <li>
+                                <span class="check-icon" aria-hidden="true"
+                                    >✓</span
+                                >Weekly, fortnightly or monthly budgets
+                            </li>
+                            <li>
+                                <span class="check-icon" aria-hidden="true"
+                                    >✓</span
+                                >Challenges &amp; gamification
+                            </li>
+                            <li>
+                                <span class="check-icon" aria-hidden="true"
+                                    >✓</span
+                                >Period summary
+                            </li>
+                            <li>
+                                <span class="check-icon" aria-hidden="true"
+                                    >✓</span
+                                >Recurring &amp; upcoming transactions
+                            </li>
+                            <li>
+                                <span class="check-icon" aria-hidden="true"
+                                    >✓</span
+                                >Offline mode
+                            </li>
+                            <li>
+                                <span class="check-icon" aria-hidden="true"
+                                    >✓</span
+                                >Sync across devices
+                            </li>
+                        </ul>
+                        <button type="button" class="plan-cta">
+                            Get started free
+                        </button>
+                    </article>
 
-      <div class="plan-grid">
-        <article class="plan-card plan-free" id="plan-free">
-          <h2 class="plan-name">Free</h2>
-          <p class="plan-desc">
-            Everything you need to start budgeting.
-          </p>
-          <p class="plan-desc">
-            Start budgeting without spending anything.
-          </p>
-          <ul class="plan-features">
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>1 basic + 1 advanced book
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>Up to 2 accounts
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>Weekly, fortnightly or monthly
-              budgets
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>Challenges &amp; gamification
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>Period summary
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>Recurring &amp; upcoming
-              transactions
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>Offline mode
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>Sync across devices
-            </li>
-          </ul>
-          <button type="button" class="plan-cta">Get started free</button>
-        </article>
-
-        <article class="plan-card plan-pro" id="plan-pro">
-          <h2 class="plan-name">Pro</h2>
-          <p class="plan-desc">For when you're ready to go deeper.</p>
-          <p class="plan-desc">Everything in Free, plus:</p>
-          <ul class="plan-features">
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>Unlimited books, accounts &amp;
-              trackers
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>Advanced analytics
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>Stay on Track: daily and weekly
-              pacing
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>Calendar view
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>Budget rollover
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>Tags &amp; export to CSV
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>Income goals
-            </li>
-            <li>
-              <span class="check-icon" aria-hidden="true">✓</span>App lock
-            </li>
-          </ul>
-          <button type="button" class="plan-cta">Upgrade to Pro</button>
-        </article>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2026 Nest Egg</p>
-  </footer>
-</body>
-
+                    <article class="plan-card plan-pro" id="plan-pro">
+                        <h2 class="plan-name">Pro</h2>
+                        <p class="plan-desc">
+                            For when you're ready to go deeper.
+                        </p>
+                        <p class="plan-desc">Everything in Free, plus:</p>
+                        <ul class="plan-features">
+                            <li>
+                                <span class="check-icon" aria-hidden="true"
+                                    >✓</span
+                                >Unlimited books, accounts &amp; trackers
+                            </li>
+                            <li>
+                                <span class="check-icon" aria-hidden="true"
+                                    >✓</span
+                                >Advanced analytics
+                            </li>
+                            <li>
+                                <span class="check-icon" aria-hidden="true"
+                                    >✓</span
+                                >Stay on Track: daily and weekly pacing
+                            </li>
+                            <li>
+                                <span class="check-icon" aria-hidden="true"
+                                    >✓</span
+                                >Calendar view
+                            </li>
+                            <li>
+                                <span class="check-icon" aria-hidden="true"
+                                    >✓</span
+                                >Budget rollover
+                            </li>
+                            <li>
+                                <span class="check-icon" aria-hidden="true"
+                                    >✓</span
+                                >Tags &amp; export to CSV
+                            </li>
+                            <li>
+                                <span class="check-icon" aria-hidden="true"
+                                    >✓</span
+                                >Income goals
+                            </li>
+                            <li>
+                                <span class="check-icon" aria-hidden="true"
+                                    >✓</span
+                                >App lock
+                            </li>
+                        </ul>
+                        <button type="button" class="plan-cta">
+                            Upgrade to Pro
+                        </button>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Copyright &copy; 2026 Nest Egg Inc.</p>
+        </footer>
+    </body>
 </html>

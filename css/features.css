@@ -14,7 +14,7 @@
     font-family: "Roboto ExtraBold", sans-serif;
     font-size: 36px;
     color: var(--color-dark);
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
 }
 
 .features-intro p {
@@ -55,7 +55,7 @@
     font-family: "Roboto ExtraBold", sans-serif;
     font-size: 24px;
     color: var(--color-dark);
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
 }
 
 .feature-card p {
@@ -63,6 +63,10 @@
     font-size: 16px;
     line-height: 1.5;
     color: var(--color-dark);
+}
+
+.cta-wrapper {
+    padding: 0 1.25rem;
 }
 
 .features-cta {
@@ -78,7 +82,7 @@
 .features-cta h2 {
     font-family: "Roboto ExtraBold", sans-serif;
     font-size: 28px;
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
 }
 
 .features-cta p {
